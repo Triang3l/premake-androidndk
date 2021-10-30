@@ -303,7 +303,7 @@ With some exceptions, most language-specific settings can be set independently f
   - One build option may contain one or multiple compiler arguments separated with whitespaces.
   - Double quotation marks (`"`) may be used to specify a single compiler argument containing whitespaces.
   - If double quotation marks need to be escaped, they need to be prefixed with `\`, as `"\\\""` according to Lua string literal escaping rules.
-  - The backslash character ('`') itself also needs to be escaped with another `\`, as `"\\\\"`, so the module can distinguish between a backslash used for escaping the double quote character and an actual backslash character.
+  - The backslash character (`\`) itself also needs to be escaped with another `\`, as `"\\\\"`, so the module can distinguish between a backslash used for escaping the double quote character and an actual backslash character.
   - All other characters after GNU make `$` variable or function reference expansion are allowed, and other shell-interpreted characters will be escaped automatically at build time.
   - Because of the way the values are gathered from the used filters, duplicate `buildoptions` are eliminated. For this reason, always specify multiple-argument options as `{ "-prefix value1", "-prefix value2" }`, not `{ "-prefix", "value1", "-prefix", "value2" }` (as the latter will become `"-prefix value1 value2"`).
   - See the documentation for the `"LinkTimeOptimization"` flag here for details about the handling of `"-flto=…"`.
